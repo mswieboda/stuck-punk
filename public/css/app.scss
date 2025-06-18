@@ -48,11 +48,13 @@ body.tm-lime h5 {
   color: $lime-primary-color;
 }
 
-body.tm-lime a {
+body.tm-lime a,
+body.tm-lime a:visited {
   color: $lime-primary-color;
 }
 
-body.tm-lime a:hover, body.tm-lime a:focus {
+body.tm-lime a:hover,
+body.tm-lime a:focus {
   color: $lime-primary-dimmed-color;
 }
 
@@ -68,10 +70,12 @@ body.tm-red h5 {
   color: $red-primary-color;
 }
 
-body.tm-red a {
+body.tm-red a,
+body.tm-red a:visited {
   color: $red-primary-color;
 }
 
-body.tm-red a:hover, body.tm-red a:focus {
+body.tm-red a:hover,
+body.tm-red a:focus {
   color: $red-primary-dimmed-color;
 }

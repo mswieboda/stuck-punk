@@ -28,11 +28,13 @@ body.tm-lime h5 {
   color: #aaf300;
 }
 
-body.tm-lime a {
+body.tm-lime a,
+body.tm-lime a:visited {
   color: #aaf300;
 }
 
-body.tm-lime a:hover, body.tm-lime a:focus {
+body.tm-lime a:hover,
+body.tm-lime a:focus {
   color: #77c000;
 }
 
@@ -44,11 +46,13 @@ body.tm-red h5 {
   color: #ff0000;
 }
 
-body.tm-red a {
+body.tm-red a,
+body.tm-red a:visited {
   color: #ff0000;
 }
 
-body.tm-red a:hover, body.tm-red a:focus {
+body.tm-red a:hover,
+body.tm-red a:focus {
   color: #aa0000;
 }
 

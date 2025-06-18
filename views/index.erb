@@ -12,13 +12,38 @@
     <link rel="stylesheet" href="css/foundation.css" type="text/css" />
     <link rel="stylesheet" href="css/app.css" type="text/css" />
   </head>
-  <!-- <body class="tm-red"> -->
-  <body class="tm-lime">
+  <body id="body" class="tm-lime">
 
     <div class="title-bar">
       <div class="title-bar-right">
         <span class="title-bar-title">Stuck Punk</span>
-        <button class="menu-icon" type="button"></button>
+        <button class="menu-icon" type="button" data-toggle="titleBarMenu"></button>
+
+        <div class="off-canvas-wrapper">
+          <div class="off-canvas position-right" id="titleBarMenu" data-off-canvas>
+            <div class="grid-x grid-padding-x grid-padding-y">
+              <div class="cell large-9">
+                <h1>stuff</h1>
+              </div>
+              <div class="cell large-3">
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-x grid-padding-x grid-padding-y">
+              <div class="cell large-12">
+                <h6>theme:</h6>
+                <div class="menu vertical button-group">
+                  <button class="button secondary" type="button">lime</button>
+                  <button class="button secondary" type="button">red</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 

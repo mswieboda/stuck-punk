@@ -1,11 +1,12 @@
 $font-stack: Helvetica, sans-serif;
 
 $main-bg-color: #131313;
+$main-text-color: #d0d0d0;
 
 $callout-bg-color: #313131;
 $callout-border-color: #131313;
 
-$text-main-color: #d0d0d0;
+$title-bar-bg-color: #0c0c0c;
 
 $lime-primary-color: #aaf300;
 $lime-primary-dimmed-color: #77c000;
@@ -24,7 +25,7 @@ a {
 
 .callout {
   background-color: $callout-bg-color;
-  color: $text-main-color;
+  color: $main-text-color;
   border: 3px solid $callout-border-color;
   border-radius: 16px;
 }
@@ -35,19 +36,26 @@ a {
   border-radius: 16px;
 }
 
+.off-canvas {
+  background-color: $callout-bg-color;
+  color: $main-text-color;
+}
+
+.off-canvas.position-right {
+  border-radius: 16px 0px 0px 16px;
+}
+
+.title-bar {
+  background-color: $title-bar-bg-color;
+}
+
 
 //
 // THEME: LIME
 //
 
-body.tm-lime img.header {
-  filter: invert(0.13) sepia(0.13) saturate(33) hue-rotate(23deg);
-}
-
-body.tm-lime h5 {
-  color: $lime-primary-color;
-}
-
+body.tm-lime .title-bar,
+body.tm-lime h5,
 body.tm-lime a,
 body.tm-lime a:visited {
   color: $lime-primary-color;
@@ -58,18 +66,16 @@ body.tm-lime a:focus {
   color: $lime-primary-dimmed-color;
 }
 
+body.tm-lime img.header {
+  filter: invert(0.13) sepia(0.13) saturate(33) hue-rotate(23deg);
+}
+
 //
 // THEME: RED
 //
 
-body.tm-red img.header {
-  filter: invert(0.89) sepia(0.69) saturate(69) hue-rotate(355deg);
-}
-
-body.tm-red h5 {
-  color: $red-primary-color;
-}
-
+body.tm-red .title-bar,
+body.tm-red h5,
 body.tm-red a,
 body.tm-red a:visited {
   color: $red-primary-color;
@@ -78,4 +84,8 @@ body.tm-red a:visited {
 body.tm-red a:hover,
 body.tm-red a:focus {
   color: $red-primary-dimmed-color;
+}
+
+body.tm-red img.header {
+  filter: invert(0.89) sepia(0.69) saturate(69) hue-rotate(355deg);
 }

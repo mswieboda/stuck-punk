@@ -1,0 +1,77 @@
+$font-stack: Helvetica, sans-serif;
+
+$main-bg-color: #131313;
+
+$callout-bg-color: #313131;
+$callout-border-color: #131313;
+
+$text-main-color: #d0d0d0;
+
+$lime-primary-color: #aaf300;
+$lime-primary-dimmed-color: #77c000;
+
+$red-primary-color: #ff0000;
+$red-primary-dimmed-color: #aa0000;
+
+body {
+  background: $main-bg-color;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.callout {
+  background-color: $callout-bg-color;
+  color: $text-main-color;
+  border: 3px solid $callout-border-color;
+  border-radius: 16px;
+}
+
+.card {
+  margin: 0 0 1rem 0;
+  border: 3px solid $callout-border-color;
+  border-radius: 16px;
+}
+
+
+//
+// THEME: LIME
+//
+
+body.tm-lime img.header {
+  filter: invert(0.13) sepia(0.13) saturate(33) hue-rotate(23deg);
+}
+
+body.tm-lime h5 {
+  color: $lime-primary-color;
+}
+
+body.tm-lime a {
+  color: $lime-primary-color;
+}
+
+body.tm-lime a:hover, body.tm-lime a:focus {
+  color: $lime-primary-dimmed-color;
+}
+
+//
+// THEME: RED
+//
+
+body.tm-red img.header {
+  filter: invert(0.89) sepia(0.69) saturate(69) hue-rotate(355deg);
+}
+
+body.tm-red h5 {
+  color: $red-primary-color;
+}
+
+body.tm-red a {
+  color: $red-primary-color;
+}
+
+body.tm-red a:hover, body.tm-red a:focus {
+  color: $red-primary-dimmed-color;
+}

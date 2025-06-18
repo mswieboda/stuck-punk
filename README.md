@@ -5,6 +5,8 @@ Stuck Punk website
 
 ruby 3.4.4
 
+(installed locally via [asdf](https://github.com/asdf-vm/asdf-ruby, but can be `rbenv`, `rvm`, or `brew`, manual zip, etc)
+
 ```
 gem install bundler
 ```

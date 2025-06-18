@@ -1,2 +1,7 @@
+require 'sinatra'
+require 'grape'
+
 require './app'
-run Sinatra::Application
+
+# use Rack::Session::Cookie
+run Rack::Cascade.new [Web, API]

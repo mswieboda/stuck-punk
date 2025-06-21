@@ -21,9 +21,10 @@
 
         <div class="off-canvas-wrapper">
           <div class="off-canvas position-right" id="titleBarMenu" data-off-canvas>
+
             <div class="grid-x grid-padding-x grid-padding-y">
               <div class="cell large-9">
-                <h1>stuff</h1>
+                <h1>menu</h1>
               </div>
               <div class="cell large-3">
                 <button class="close-button" aria-label="Close menu" type="button" data-close>
@@ -32,15 +33,23 @@
               </div>
             </div>
 
-            <div class="grid-x grid-padding-x grid-padding-y">
-              <div class="cell large-12">
-                <h6>theme:</h6>
-                <div class="menu vertical button-group" id="tm-buttons">
-                  <button class="button secondary" type="button" value="tm-lime">lime</button>
-                  <button class="button secondary" type="button" value="tm-red">red</button>
-                </div>
-              </div>
-            </div>
+            <form>
+              <fieldset class="fieldset">
+                <legend>login</legend>
+                <label>email
+                  <input type="text" placeholder="email">
+                </label>
+                <label>password
+                  <input type="text" placeholder="pass">
+                </label>
+              </fieldset>
+            </form>
+
+            <fieldset class="fieldset" id="tm-buttons">
+              <legend>theme</legend>
+              <button class="button secondary" type="button" value="tm-lime">lime</button>
+              <button class="button secondary" type="button" value="tm-red">red</button>
+            </fieldset>
           </div>
         </div>
 

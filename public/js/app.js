@@ -10,7 +10,7 @@ $(document).ready(function() {
 		console.log(">>> setTheme ", themeClass)
 
 		_.forEach(THEMES, function(tclass) {
-			console.log(">>> setTheme removeClass", themeClass)
+			console.log(">>> setTheme removeClass", tclass)
 			$("#body").removeClass(tclass)
 		})
 

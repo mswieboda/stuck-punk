@@ -21,7 +21,8 @@ $(document).ready(function() {
 
 	var loadInitialTheme = function() {
 		console.log(">>> loadInitialTheme")
-		setTheme(Cookies.get('theme'))
+		// setTheme(Cookies.get('theme'))
+		setTheme(null)
 	}
 
 	loadInitialTheme()

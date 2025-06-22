@@ -24,3 +24,19 @@ puma
 ```
 
 which [puma](https://github.com/puma/puma) will use the `config.ru` file to run the [Sinatra](https://sinatrarb.com/) app
+
+# helper commands
+
+auto compile css
+
+```
+$ sass --watch public/css/app.scss:public/css/app.css
+```
+
+open firefox (from windows WSL)
+
+```
+$ firefox 0.0.0.0:9292 &
+
+# and kill logs with CTRL+C, `&` still keeps `firefox` running
+```
